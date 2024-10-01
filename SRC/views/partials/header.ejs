@@ -1,0 +1,28 @@
+<header>
+  <div class="container-logo">
+    <a href="/"><img class="logo" src="/images/logo.png" /></a>
+  </div>
+  <nav id="menu">
+    <ul>
+      <% if (locals.usuario) { %>
+      <li>¡Hola <%= usuario.name %>!</li>
+      <% } %>
+      <li class="cartamenu"><a href="/products/">Menu</a></li>
+      <li><a href="/nosotros">Nosotros</a></li>
+      <li class="carritoli">
+        <a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a>
+      </li>
+      <% if (locals.usuario) { %> 
+
+        <% if (locals.userAdmin) { %>
+      <li class="crearli"><a href="/products/create">crear productos</a></li>
+      <% } %>
+
+      <li><a href="/users/logout">Cerrar Sesion</a></li>
+
+      <% } else { %>
+      <li class="loginli"><a href="/users">Iniciar sesion</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</header>

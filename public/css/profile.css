@@ -1,0 +1,214 @@
+body{
+    background-image: url(/images/pexels-cottonbro-3296277.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.container-formulario{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: fit-content;
+    align-items: center;
+    margin-top: 10px;
+}
+form h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+    margin-top: -15px;
+}
+form.login, form.register{
+    background: rgba(0, 0, 0, 0.76);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    backdrop-filter: blur(2px);
+}
+
+form input{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+    color: white;
+}
+.usuario{
+    margin:3px 0px;
+    width: 90%;
+    height: 5vh;
+}
+::placeholder{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+div.container-domicilio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:3px 0px;
+    margin-bottom: 4px;
+    width: 64vw;
+    height: 5vh;
+    background-color: transparent;
+}
+
+.boton{
+    margin-top: 5px;
+    width: 90%;
+    height: 5vh;
+    align-self: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.boton:hover{
+    background-color: #23110D;
+}
+input.calle {
+    width: 65%;
+    height: 5vh;
+}
+input.numero{
+    width: 30%;
+    height: 5vh;
+}
+
+.error-msg{
+    color: white;
+    font-size: 16px;
+    line-height: 0.5px;
+    font-style: italic;
+    margin: 6px;
+    width: 90%;
+}
+
+.recordarme-div{
+    display: flex;
+    padding: 20px;
+}
+
+label.recordarme{
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.container-img{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px){
+
+    body{
+        background-image: url(/images/fondo-index.jpg);
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .container-formulario{
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        /* background: rgba(0, 0, 0, 0.76);
+        backdrop-filter: blur(2px); */
+        /* height: fit-content; */
+        /* margin-left: 15%; */
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+    }
+    form h3{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 43px;
+        text-align: center;
+        color: white;
+    }
+    form.login, form.register{
+        
+        background: rgba(0, 0, 0, 0.76);
+        backdrop-filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 35vw;
+        height: 70vh;
+    }
+    form input{
+        background: #642722;
+        mix-blend-mode: lighten;
+        opacity: 0.9;
+        border: none;
+        color: white;
+    }
+    .usuario{
+        margin:10px;
+        width: 35vw;
+        height: 50px;
+    }
+    ::placeholder{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 5px;
+    }
+    div.container-domicilio{
+        display: flex;
+        flex-direction: row;
+        margin: 3px 0px;
+        height: 50px;
+        width: 35.5vw;
+        background-color: transparent;
+    }
+    input.address {
+        height: 50px;
+       width: 75%;
+    }
+    input.numero{
+        height: 50px;
+        width: 20%;
+    }
+    
+    .boton{
+        margin-top: 5px;
+        width: 35.3vw;
+        height: 50px;
+        align-self: center;
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    footer{
+        margin-top: 0;
+    }
+    
+}

@@ -1,0 +1,65 @@
+body{
+    /* background-image: url(/images/fondo-nosotros.png); */
+    background-image: url(/images/pexels-lisa-fotios-776538.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    
+}
+.container-nosotros{
+    width: 85%;
+    background: #000000;
+    opacity: 0.6;
+}
+.texto-nosotros{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media (min-width: 768px){
+    body{
+        background-image: url(/images/pexels-ivan-samkov-8951106.jpg);
+        background-size: cover;
+    }
+    .container{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 20px; /*Para separarlo del footer*/
+    }
+    .container-nosotros{
+        width: 85%;
+        background: #000000;
+        opacity: 0.6;
+        align-self: center;
+        }
+    .texto-nosotros{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    footer{
+        margin-top: 20vw;
+    }
+}
+
+

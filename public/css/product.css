@@ -1,0 +1,196 @@
+
+body {
+    background-color: black;
+}
+
+article{
+    background-color: #642722;
+    border-radius: 10px;
+}
+/* PRODUCTO */
+
+.product-container article {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.product-container img {
+    width: 90%;
+    background-color: #642722;
+    padding: 50px 20px;
+    margin: 20px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.product-descrip {
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.product-descrip h3 {
+    background-color: #642722;
+    padding: 10px;
+    justify-content: center;
+    margin: 20px;
+    display: inline-block;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.box-cantidades {
+    background-color: #642722;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin: 20px 20px;
+}
+
+
+
+.texto-cantidad {
+    text-align: center;
+}
+
+#aclaraciones {
+    padding: 10px;
+    background-color: #745C5A;
+}
+
+.texto-aclaracion {
+    background-color: white;
+    width: 80%;
+    height: 70px;
+    margin: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.box-cantidades p {
+    background-color:#642722;
+}
+
+.pedir-button {
+    background-color: #FFFFFF;
+    padding: 5px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.pedir-button:hover {
+    background-color: #642722;
+    color: white;
+}
+
+
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+    .product-container {
+        display: flex;
+        justify-content: center;
+    }
+    .product-container article {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        margin: auto 20px;
+        color: #FFFFFF;
+        align-items: center;
+    }
+    
+    .product-container img {
+        width: 40%;
+        background-color: #642722;
+        padding: 35px 20px;
+        margin: 20px 20px;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    
+    .product-descrip {
+        margin: 10px 100px;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .product-descrip h3 {
+        background-color: #642722;
+        padding: 10px;
+        justify-content: center;
+        margin: auto;
+        display: inline-block;
+        margin: 50px;
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    
+    .price {
+        font-weight: bold;
+        margin: 30px;
+        font-size: 30px;
+    }
+    
+    .box-cantidades {
+        background-color: #642722;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin: 20px 20px;
+    }
+    
+    .cantidad{
+        width: 50px;
+        height: 25px;
+        text-align: end;
+        background-color: rgba(217, 217, 217, 0.85);
+        border: none;
+        border-radius: 3px;
+        margin-top: 5px;
+    }
+    
+    #aclaraciones {
+        padding: 10px;
+        background-color: #642722;
+    }
+
+    .texto-aclaracion {
+        background-color: white;
+        width: 80%;
+        height: 70px;
+        margin: 10px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .box-cantidades p {
+        background-color:#642722;
+    }
+
+    .pedir-button {
+        background-color: #FFFFFF;
+        padding: 5px;
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: -15px;
+    }
+
+}
